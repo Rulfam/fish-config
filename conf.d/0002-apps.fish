@@ -8,6 +8,10 @@ if command -q python
     set -gx PYTHONUSERBASE "$XDG_DATA_HOME/python"
 end
 
+if command -q rust
+    set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
+end
+
 if command -q wine
     set -gx WINEPREFIX "$XDG_DATA_HOME/wineprefixes/default"
 end
