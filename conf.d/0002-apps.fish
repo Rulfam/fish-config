@@ -8,7 +8,7 @@ if command -q python
     set -gx PYTHONUSERBASE "$XDG_DATA_HOME/python"
 end
 
-if command -q rust
+if command -q rustc
     set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 end
 
