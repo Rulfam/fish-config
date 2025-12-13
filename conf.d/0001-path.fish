@@ -8,7 +8,7 @@ if test -x "$XDG_DATA_HOME/symfony5/bin/symfony/symfony"
 end
 
 # XDG_BIN_HOME
-if test -e "$XDG_BIN_HOME"
+if set -q "$XDG_BIN_HOME"; and test -e "$XDG_BIN_HOME"
     fish_add_path -a -g "$XDG_BIN_HOME"
 end
 
